@@ -6,4 +6,4 @@
 execute um por vez:\
 npm install\
 npm build\
-npm run dev\
+npm run dev
