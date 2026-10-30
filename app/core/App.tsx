@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ComponentType } from 'react'
-import './app'
+import './app.css'
 import { pages } from './pages'
 import type { PageProps } from '../shared/types/design'
 import LoginPage from '../pages/LoginPage'
