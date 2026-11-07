@@ -1,6 +1,4 @@
-# Execução
-
-Pré-requisitos: Python 3.9+ e Node.js 18+.
+Precisa de Python e Node.js.
 
 ## Backend
 
