@@ -7,3 +7,9 @@ qualquer que for execute um por vez:\
 npm install\
 npm build\
 npm run dev
+
+em outro terminal:\
+python -m pip install -r backend/requirements.txt\
+python backend/app.py
+
+abra qualquer Ports que aparecer
