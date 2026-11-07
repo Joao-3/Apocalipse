@@ -6,7 +6,8 @@ from pathlib import Path
 app = Flask(__name__)
 CORS(app, origins=["http://localhost:5173", "http://127.0.0.1:5173"]) # aq onde o React envia
 USERS_FILE = Path(__file__).with_name("usuarios.txt")
-
+# joao eu odeio seu codigo cara tipo muito mesmo cara  nunca mais cria seu troço com site de trasformacanva em react cara
+# João P.S.: Jamais serei perdoado, mas agora tá melhor (só não mexer nos .json).
 @app.route("/")
 def inicio():
     return "Backend da A3 funcionando!"
