@@ -1,16 +1,16 @@
-Precisa de Python e Node.js.
+Precisa de Python e Node.js.\
 
-cd backend
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python app.py
+cd backend\
+python3 -m venv .venv\
+source .venv/bin/activate\
+pip install -r requirements.txt\
+python app.py\
 
 
-Em outro terminal:
+Em outro terminal:\
 
-cd test
-npm install
-npm run dev
+cd test\
+npm install\
+npm run dev\
 
 abra qualquer Ports que é direcionado
