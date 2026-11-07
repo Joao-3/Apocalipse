@@ -1,7 +1,8 @@
 export function Turmas({ voltar, irParaAlunos }) {
   const btn = { border: 'none', color: 'white', fontWeight: 'bold', cursor: 'pointer', borderRadius: '12px', padding: '15px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' };
+  // [undefined, undefined, undefined... +4x]
   const turmas = [...Array(7)].map((_, i) => `turma ${i + 1}`); // fé
-  const dados = [
+  const dados = [ // melhor que em HTML <table>
     ['baixa', 'nenhum', 'media', 'media', 'media', 'baixa'],
     ['media', 'media', 'media', 'media', 'media', 'baixa'],
     ['media', 'media', 'media', 'alta', 'media', 'alta'],
