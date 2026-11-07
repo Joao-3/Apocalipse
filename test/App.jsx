@@ -9,6 +9,7 @@ import React from 'react' // não tirar, senão dá erro de React is not defined
 export function App() {
   const [tela, atualizarTela] = useState('Login');
 
+  // definição de voltar() aq
   switch (tela) {
     case 'Cadastro':
       return <Cadastro voltar={() => atualizarTela('Login')} irParaTurmas={() => atualizarTela('Turmas')} />;
