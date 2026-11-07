@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 export function Cadastro({ voltar, irParaTurmas }) {
+  // useState = [email, atualizarEmail]
   const [email, atualizarEmail] = useState('');
   const [senha, atualizarSenha] = useState('');
   const [confirma, atualizaConfirma] = useState('');
