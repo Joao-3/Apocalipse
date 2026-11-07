@@ -4,7 +4,7 @@ import bcrypt
 from pathlib import Path
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173", "http://127.0.0.1:5173"])
+CORS(app, origins=["http://localhost:5173", "http://127.0.0.1:5173"]) # aq onde o React envia
 USERS_FILE = Path(__file__).with_name("usuarios.txt")
 
 @app.route("/")
@@ -15,7 +15,7 @@ def inicio():
 def login():
     email = request.form.get("email", "").strip()
     senha = request.form.get("senha", "")
-    if not email or not senha: # 
+    if not email or not senha: # alguém bem suspeito tentou isso antes
         return jsonify({"mensagem": "E-mail e senha são obrigatórios."}), 400
 
     if USERS_FILE.exists():
