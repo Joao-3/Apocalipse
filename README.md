@@ -1,15 +1,21 @@
-# Apocalipse
+# Execução
 
-## Para rodar abra Terminal:
-- se no github codespace abra o Terminal
-- se no windows abra o CMD/PowerShell
-qualquer que for execute um por vez:\
-npm install\
-npm build\
+Pré-requisitos: Python 3.9+ e Node.js 18+.
+
+## Backend
+
+cd backend
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python app.py
+
+## Frontend
+
+Em outro terminal:
+
+cd test
+npm install
 npm run dev
 
-em outro terminal:\
-python -m pip install -r backend/requirements.txt\
-python backend/app.py
-
-abra qualquer Ports que aparecer
+abra qualquer Ports que é direcionado

@@ -1,0 +1,5 @@
+backend/.venv/
+backend/__pycache__/
+backend/usuarios.txt
+test/node_modules/
+test/dist/
