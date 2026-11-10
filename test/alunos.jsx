@@ -1,3 +1,5 @@
+import React from 'react'
+
 export function Alunos({ voltar, irParaAluno }) {
   const box = { backgroundColor: '#a3a3a3', padding: '15px 20px', borderRadius: '8px', color: '#333', fontSize: '18px', textAlign: 'center' };
   const btnStyle = { padding: '15px', borderRadius: '12px', border: 'none', color: 'white', fontSize: '15px', fontWeight: 'bold', cursor: 'pointer', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' };
