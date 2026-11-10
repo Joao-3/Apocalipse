@@ -1,3 +1,5 @@
+import React from 'react'
+
 export function Aluno({ voltar }) {
   const b = { background: '#a3a3a3', padding: '15px', borderRadius: '8px', color: '#111', fontSize: '18px' };
   const btn = { border: 'none', color: 'white', fontWeight: 'bold', cursor: 'pointer', borderRadius: '12px', padding: '15px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' };
