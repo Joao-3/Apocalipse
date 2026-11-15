@@ -14,7 +14,6 @@ cd test\
 npm install\
 npm run dev\
 
-O Vite encaminha `/cadastro` e `/login` para o backend em `127.0.0.1:5000`.
-Se o Vite já estava aberto antes da criação dessa configuração, pare-o e execute `npm run dev` novamente para carregar o proxy.
+cd test && npm install && npm run dev
 
-abra qualquer Ports que é direcionado
+abra 5173/4 Ports que é direcionado
