@@ -11,7 +11,7 @@ export function Login({ irParaCadastro, irParaTurmas }) {
     formData.append('senha', senha);
 
     try {
-      const res = await fetch('http://127.0.0.1:5000/login', { method: 'POST', body: formData });
+      const res = await fetch('/login', { method: 'POST', body: formData });
       const data = await res.json();
       alert(data.mensagem);
       if (res.ok) irParaTurmas();

@@ -15,8 +15,10 @@ export function Cadastro({ voltar, irParaTurmas }) {
     formData.append('senha', senha);
 
     try {
-      const res = await fetch('http://127.0.0.1:5000/cadastro', { method: 'POST', body: formData });
-      const data = await res.json();
+      const res = await fetch('/cadastro', { method: 'POST', body: formData });
+      let data;
+      data = await res.json();
+
       alert(data.mensagem);
       if (res.ok) irParaTurmas();
     } catch (error) {
