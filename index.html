@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Escolar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- login -->
+  <section id="p1" class="page active">
+    <div class="form-box">
+      <label for="login-email">email</label>
+      <input id="login-email" type="email" placeholder="coloque seu email aqui">
+      <label for="login-senha">senha</label>
+      <input id="login-senha" type="password" placeholder="coloque sua senha aqui">
+      
+      <button class="btn-grey" onclick="entrar()">Entrar</button>
+      <button class="btn-purple" onclick="nav('p2')">Cadastra-se já</button>
+    </div>
+  </section>
+
+  <!-- cadastro -->
+  <section id="p2" class="page">
+    <div class="form-box">
+      <h2>Cadastro</h2>
+      <label for="cadastro-email">email</label>
+      <input id="cadastro-email" type="email" placeholder="coloque seu email aqui">
+      <label for="cadastro-senha">senha</label>
+      <input id="cadastro-senha" type="password" placeholder="coloque sua senha aqui">
+      
+      <div class="roles">
+        <label>coloque o que você é</label>
+        <div>
+          <label><input type="checkbox"> diretor</label>
+          <label><input type="checkbox"> professor</label>
+          <label><input type="checkbox"> pai/mãe</label>
+        </div>
+      </div>
+      
+      <label for="confirmar-senha">confirme sua senha</label>
+      <input id="confirmar-senha" type="password" placeholder="coloque sua senha aqui">
+      
+      <button class="btn-grey" onclick="cadastrar()">Cadastrar</button>
+      <button class="btn-volte fixed-left" onclick="nav('p1')">volte</button>
+    </div>
+  </section>
+
+  <!-- adicionar/procurar -->
+  <section id="p3" class="page">
+    <div class="row">
+      <div class="box-text">Adicione um aluno:</div>
+      <div class="col">
+        <input placeholder="coloque o ano letivo aqui">
+        <input placeholder="coloque a turma aqui">
+      </div>
+      <input class="box-input" placeholder="coloque o nome do aluno aqui">
+    </div>
+
+    <div class="row">
+      <div class="box-text">Procure um aluno:</div>
+      <div class="col">
+        <input placeholder="coloque o ano letivo aqui">
+        <input placeholder="coloque a turma aqui">
+      </div>
+      <input class="box-input" placeholder="coloque o nome do aluno aqui">
+    </div>
+
+    <button class="evasao" type="button" onclick="nav('p4')">Veja todas as<br>chances de evasão<br>escolar</button>
+    <button class="btn-volte fixed-left" onclick="nav('p1')">volte</button>
+  </section>
+
+  <!-- página 4 -->
+  <section id="p4" class="page">
+    <button class="btn-red" onclick="alert('Denúncia enviada!')">denunciar pro<br>conselho tutelar</button>
+
+    <div class="center-inputs">
+      <input value="Turma do aluno">
+      <input value="Nome do aluno">
+    </div>
+
+    <div class="hist-col">
+      <label>Histórico/Faltas do Aluno</label>
+      <div class="table-grid" id="history-grid"></div>
+    </div>
+
+    <div class="obs-col">
+      <label>Denúncias/Observações<br>dos professores</label>
+      <textarea placeholder="digite suas observações aqui"></textarea>
+    </div>
+
+    <button class="btn-volte fixed-left" onclick="nav('p3')">volte</button>
+    <button class="btn-purple fixed-right" onclick="nav('p5')">Ver Evasão Escolar</button>
+  </section>
+
+  <!-- página 5 -->
+  <section id="p5" class="page">
+    <div class="menu">
+      <button>turma 1</button><button>turma 2</button><button>turma 3</button>
+      <button>turma 4</button><button>turma 5</button><button>turma 6</button>
+      <button>turma 7</button>
+    </div>
+
+    <div class="table-grades" id="evasion-grid"></div>
+    <button class="btn-volte fixed-left" onclick="nav('p3')">volte</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

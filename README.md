@@ -1,19 +1,12 @@
-Precisa de Python e Node.js.\
+No 1º terminal:
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r backend\requirements.txt
+python backend\app.py
 
-cd backend\
-python3 -m venv .venv\
-source .venv/bin/activate\
-pip install -r requirements.txt\
-python app.py\
+backend em: http://127.0.0.1:5000
 
-cd backend && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && python app.py
+No segundo terminal:
+py -m http.server 5173
 
-Em outro terminal:\
-
-cd test\
-npm install\
-npm run dev\
-
-cd test && npm install && npm run dev
-
-abra 5173/4 Ports que é direcionado
+Abra: http://localhost:5173
